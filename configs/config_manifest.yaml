@@ -1,0 +1,444 @@
+# Easy ORB Strategy — config manifest & ownership (Config Cleanup Pass 3 — May 2026)
+# Loader order (later overrides earlier): Data → Shared → ORBSO → ORB0DTE → Trendline0DTE → Risk → Alerts
+# Classifications on ownership_groups: KEEP_PUBLIC | MERGE_INTO_PROFILE | MOVE_TO_CODE_DEFAULT | DEPRECATE | UNKNOWN_USAGE_NEEDS_CODE_SEARCH
+# Prefix / exact matching: exact_keys win first; then longest key_prefix wins (see modules/config_surface_metrics.py).
+
+version: 2
+loader_order:
+  - Data.env
+  - Shared.env
+  - ORBSO.env
+  - ORB0DTE.env
+  - Trendline0DTE.env
+  - Risk.env
+  - Alerts.env
+
+profile_keys:
+  SO_PROFILE: { owner: ORB_SO, default: balanced, allowed: [conservative, balanced, aggressive_open, momentum_open] }
+  ORB_0DTE_EXECUTION_PROFILE: { owner: ORB_0DTE, default: balanced_open, allowed: [conservative, balanced_open, aggressive_open, momentum_open] }
+  TRENDLINE_ENTRY_PROFILE: { owner: TRENDLINE_0DTE, default: balanced, allowed: [conservative, balanced, aggressive_open, momentum_breakout, retest_friendly] }
+  OPTIONS_EXIT_PROFILE: { owner: OPTIONS_EXIT, default: balanced, allowed: [conservative, balanced, aggressive_capture, runner_capture] }
+
+# Keys still allowed to appear in multiple files with identical merged effect (post Pass 3 cleanup).
+cross_file_duplicate_policy:
+  resolved_no_warning_keys: []
+
+deprecated_aliases:
+  - canonical: ORB_0DTE_OVEREXTENSION_SOFT_THRESHOLD
+    legacy: 0DTE_EXTENSION_THRESHOLD_PCT
+    resolution: canonical_wins_if_both_set
+
+ownership_groups:
+  GLOBAL_RUNTIME:
+    classification: KEEP_PUBLIC
+    description: Cross-path runtime, identity, automation shell, demo/live toggles (non-path strategy math).
+    key_prefixes:
+      - PRIMARY_SIGNAL_
+      - TRADING_MODE
+      - AUTOMATION_MODE
+      - STRATEGY_MODE
+      - ENVIRONMENT
+      - PROJECT_NAME
+      - VERSION
+      - POLL_SECONDS
+      - POSITION_MONITORING_INTERVAL
+      - ENABLE_ASYNC_PROCESSING
+      - ENABLE_CONNECTION_POOLING
+      - ENABLE_MEMORY_OPTIMIZATION
+      - ENABLE_CACHE_OPTIMIZATION
+      - ENABLE_PARALLEL_PROCESSING
+      - ENABLE_EXECUTION_FEATURE_SNAPSHOT
+      - PREVENT_DUPLICATE_TRADES
+      - ENABLE_SIGNAL_LEVEL_RED_DAY_FILTER
+      - REQUIRE_LIVE_OPTION_DATA
+      - ORB_BREAK_TOLERANCE
+      - ORB_RTH_INTRADAY_SYMBOLS
+      - MAX_TOTAL_OPTION_POSITIONS
+      - OPTIONS_EXIT_PROFILE
+      - BOT_
+      - AUTO_TRADING_
+      - AUTOMATION_
+      - DEMO_
+      - LIVE_
+      - NO_LIVE_TRADING
+      - SIMULATION_MODE
+      - DEBUG_MODE
+      - PERFORMANCE_MODE
+      - HOLIDAYS_
+      - MARKET_TIMEZONE
+      - MARKET_OPEN_TIME
+      - MARKET_CLOSE_TIME
+      - PREMARKET_START_TIME
+      - AFTER_HOURS_END_TIME
+      - PREP_START_ET
+      - RTH_OPEN_ET
+      - RTH_CLOSE_ET
+      - AFTER_HOURS_END_ET
+      - PORT
+      - TZ
+      - LOG_FORMAT
+      - LOG_TO_STDOUT
+      - LOG_TO_FILE
+      - LOG_ROTATION
+      - LOG_MAX_SIZE_MB
+      - LOG_BACKUP_COUNT
+      - ENABLE_HTTPS
+      - ENABLE_PRIME_SYSTEM
+      - ENABLE_ALERT_MANAGER
+      - ENABLE_RISK_MANAGEMENT
+      - ENABLE_PERFORMANCE_TRACKING
+      - ENABLE_AUTO_TRADING
+      - ORDER_TYPE
+      - TIME_IN_FORCE
+      - ALLOW_PARTIAL_FILLS
+      - AUTO_CANCEL_ORDERS
+      - SIGNAL_CONFIDENCE_THRESHOLD
+      - SIGNAL_QUALITY_THRESHOLD
+      - SIGNAL_VALIDATION_ENABLED
+      - TRADING_START_TIME
+      - TRADING_END_TIME
+      - PREMARKET_ENABLED
+      - AFTER_HOURS_ENABLED
+      - MIN_MARKET_CAP
+      - TARGET_DAILY_RETURN_PCT
+      - TARGET_WEEKLY_RETURN_PCT
+      - TARGET_MONTHLY_RETURN_PCT
+      - MIN_WIN_RATE
+      - MIN_PROFIT_FACTOR
+      - CONFIDENCE_THRESHOLD
+      - ML_CONFIDENCE_
+      - TRADITIONAL_CONFIDENCE_
+      - TIMEFRAME_
+      - VOLUME_
+      - ACCUMULATION_
+      - REGIME_CHECK_
+      - BULL_MARKET_MULTIPLIER
+      - BEAR_MARKET_MULTIPLIER
+      - NORMAL_MARKET_MULTIPLIER
+      - MIN_CONFIRMATIONS_
+      - PERFORMANCE_REPORT_
+      - SIGNAL_METRICS_
+      - AUTO_GENERATE_REPORTS
+      - ENABLE_MUSLIM_HOLIDAYS
+      - ENABLE_WEEKEND_TRADING
+      - ENABLE_AFTER_HOURS_TRADING
+      - ENABLE_PREMARKET_TRADING
+      - ENABLE_NEWS_SENTIMENT
+      - NEWS_
+      - ENABLE_PREMIUM_TRAILING
+      - BREAK_EVEN_TRIGGER_PCT
+      - ATR_
+      - PERCENTAGE_TRAIL_
+      - MOMENTUM_TRAIL_
+      - EXPLOSIVE_TRAIL_
+      - MOON_TRAIL_
+      - TRAIL_ATR_MULTIPLIER
+      - ENABLE_SIGNAL_ALERTS
+      - ENABLE_DAILY_PNL_SUMMARY
+      - ENABLE_HOURLY_STATUS_UPDATES
+      - ENABLE_ULTRA_CONFIDENCE
+      - ULTRA_CONFIDENCE_THRESHOLD
+      - EXTREME_CONFIDENCE_THRESHOLD
+      - VERY_HIGH_CONFIDENCE_THRESHOLD
+      - MAX_ULTRA_POSITION_PCT
+      - MAX_CONSECUTIVE_WIN_MULTIPLIER
+      - MAX_QUALITY_MULTIPLIER
+      - ENABLE_CONSECUTIVE_WIN_TRACKING
+      - PERFORMANCE_HISTORY_RETENTION_DAYS
+      - REBUILD_WATCHLIST
+      - HIDDEN_STOPS
+      - ENABLE_TP2
+      - TP2_PCT
+      - ENABLE_REAL_TIME_MONITORING
+      - PERFORMANCE_DEGRADATION_THRESHOLD
+      - AUTO_OPTIMIZE_CONFIGURATION
+      - SAFETY_CHECKS
+      - KILL_SWITCH_
+      - PRE_TRADE_VALIDATION
+      - POST_TRADE_VALIDATION
+      - POSITION_VALIDATION
+      - RISK_VALIDATION
+      - ORDER_VALIDATION
+      - ENABLE_AUTO_REBALANCING
+      - ENABLE_AUTO_POSITION_SIZING
+      - ENABLE_AUTO_RISK_MANAGEMENT
+      - ENABLE_AUTO_PROFIT_TAKING
+      - ENABLE_AUTO_STOP_LOSS
+      - AUTOMATION_COOLDOWN_
+      - AUTOMATION_ENABLED
+      - AUTOMATION_START_TIME
+      - AUTOMATION_END_TIME
+      - AUTOMATION_PAUSE_
+      - AUTOMATION_MONITORING_
+      - AUTOMATION_ALERTS_
+      - AUTOMATION_LOGGING_
+      - AUTOMATION_METRICS_
+      - BASE_RISK_PER_TRADE
+      - BATCH_SIZE
+      - CACHE_TTL_SECONDS
+      - CONFIDENCE_MULTIPLIER
+      - COST_MONITORING_INTERVAL_SECONDS
+      - DEBUG_BATCH_SIZE
+      - DEBUG_CACHE_TTL
+      - DEBUG_MEMORY_LIMIT_MB
+      - DEBUG_PARALLEL_WORKERS
+      - EMERGENCY_ALERT_FREQUENCY
+      - EMERGENCY_MODE_
+      - ENABLE_CACHE_PROFILING
+      - ENABLE_COST_OPTIMIZATION
+      - ENABLE_CPU_PROFILING
+      - ENABLE_DEBUG_LOGGING
+      - ENABLE_EMERGENCY_MODE
+      - ENABLE_INTEGRATION_TESTS
+      - ENABLE_MEMORY_PROFILING
+      - ENABLE_PERFORMANCE_TESTS
+      - ENABLE_PROFILING
+      - ENABLE_STRESS_TESTS
+      - ENABLE_UNIT_TESTS
+      - LOG_CACHE_HITS
+      - LOG_CALL_USAGE
+      - LOG_DATA_CALLS
+      - LOG_LATENCY_METRICS
+      - LOG_LEVEL
+      - LOG_PATH
+      - LOG_PROVIDER_SWITCHES
+      - LOG_WORKER_STATUS
+      - MAX_WORKERS
+      - MEMORY_CLEANUP_INTERVAL_SECONDS
+      - MEMORY_GC_FORCE_INTERVAL_SECONDS
+      - MEMORY_LIMIT_MB
+      - MEMORY_PRESSURE_THRESHOLD
+      - MIN_CONFIDENCE_SCORE
+      - MIN_QUALITY_SCORE
+      - MOCK_DATA
+      - MONITORING_BATCH_SIZE
+      - MONITORING_CACHE_TTL
+      - MONITORING_INTERVAL_SECONDS
+      - MONITORING_MEMORY_LIMIT_MB
+      - MONITOR_CACHE_EFFICIENCY
+      - MONITOR_CALL_USAGE
+      - MONITOR_CPU_USAGE
+      - MONITOR_LATENCY
+      - MONITOR_MEMORY_USAGE
+      - MONITOR_PROVIDER_STATUS
+      - MONITOR_WORKER_STATUS
+      - PERFORMANCE_MONITORING
+      - ERROR_MONITORING
+      - PERFORMANCE_MONITORING_ENABLED
+      - DAILY_SUMMARY_ENABLED
+      - LOG_TRADES
+      - LOG_SIGNALS
+      - LOG_PERFORMANCE
+      - LOG_ERRORS
+      - POSITION_SIZE_PCT
+      - SESSION_LOG_LEVEL
+      - TARGET_CPU_SPIKE_PCT
+      - TARGET_DAILY_COST_USD
+      - TARGET_MEMORY_LEAK_MB
+      - TARGET_MONTHLY_COST_USD
+      - TARGET_WEEKLY_RETURN
+      - TEST_BATCH_SIZE
+      - TEST_CACHE_TTL
+      - TEST_MEMORY_LIMIT_MB
+      - TEST_PARALLEL_WORKERS
+      - EXECUTION_DELAY_MS
+      - MAX_RETRY_ATTEMPTS
+      - RETRY_DELAY_MS
+      - ORDER_TIMEOUT_SECONDS
+      - RSI_OVERSOLD
+      - RSI_OVERBOUGHT
+      - MACD_SIGNAL_THRESHOLD
+      - VOLUME_SURGE_THRESHOLD
+      - PRICE_MOMENTUM_THRESHOLD
+    exact_keys:
+      - TRADING_MODE
+      - AUTOMATION_MODE
+      - STRATEGY_MODE
+      - ENVIRONMENT
+      - PROJECT_NAME
+      - VERSION
+      - PRIMARY_SIGNAL_GENERATOR
+      - REQUIRE_LIVE_OPTION_DATA
+      - PREVENT_DUPLICATE_TRADES
+      - ENABLE_EXECUTION_FEATURE_SNAPSHOT
+      - ENABLE_SIGNAL_LEVEL_RED_DAY_FILTER
+      - ORB_BREAK_TOLERANCE
+      - ORB_RTH_INTRADAY_SYMBOLS
+      - MAX_TOTAL_OPTION_POSITIONS
+      - OPTIONS_EXIT_PROFILE
+      - POLL_SECONDS
+      - POSITION_MONITORING_INTERVAL
+      - PORT
+      - TZ
+
+  DATA_AND_BROKER:
+    classification: KEEP_PUBLIC
+    file: Data.env
+    description: Broker accounts, data providers, caching, connection pools, infra, scan/data quality thresholds.
+    key_prefixes:
+      - ETRADE_
+      - BROKER_
+      - IB_
+      - RH_
+      - ROBINHOOD_
+      - GCP_
+      - GCS_
+      - DATA_
+      - WATCHLIST
+      - YAHOO_
+      - ALPHA_VANTAGE
+      - GOOGLE_
+      - CACHE_
+      - CONNECTION_
+      - MEMORY_
+      - HEALTH_
+      - FAILOVER_
+      - BATCH_REQUEST_
+      - BATCH_SIZE_LIMIT
+      - PARALLEL_PROCESSING_
+      - MAX_CONCURRENT_REQUESTS
+      - REQUEST_TIMEOUT_SECONDS
+      - READ_TIMEOUT_SECONDS
+      - WRITE_TIMEOUT_SECONDS
+      - KEEPALIVE_TIMEOUT_SECONDS
+      - MAX_CONCURRENT_CONNECTIONS
+      - CALL_MONITORING_
+      - PERFORMANCE_TRACKING_
+      - ALERT_ON_HIGH_USAGE
+      - ALERT_ON_FAILOVER
+      - DAILY_REPORT_ENABLED
+      - LATENCY_MONITORING_
+      - THROUGHPUT_MONITORING_
+      - ERROR_RATE_MONITORING_
+      - CACHE_EFFICIENCY_MONITORING_
+      - COST_MONITORING_
+      - COST_TRACKING_
+      - COST_AUTO_OPTIMIZATION
+      - COST_BUDGET_ALERTS
+      - COST_TREND_ANALYSIS
+      - TOTAL_MONTHLY_COST
+      - ETRADE_COST_PER_MONTH
+      - YAHOO_COST_PER_MONTH
+      - GOOGLE_CLOUD_COST_PER_MONTH
+      - HISTORICAL_DATA_
+      - TECHNICAL_INDICATORS_
+      - INDICATOR_
+      - MARKET_SCAN_
+      - PRE_MARKET_
+      - MARKET_OPEN_
+      - MID_DAY_
+      - LATE_DAY_
+      - AFTER_HOURS_
+      - ENABLE_REQUEST_BATCHING
+      - ENABLE_RESPONSE_CACHING
+      - ENABLE_CONNECTION_REUSE
+      - ENABLE_HTTP_KEEPALIVE
+      - ENABLE_COMPRESSION
+      - EMERGENCY_FALLBACK_ENABLED
+      - EMERGENCY_NOTIFICATION_ENABLED
+      - EMERGENCY_STOP_TRADING
+      - EMERGENCY_CACHE_CLEAR
+      - EMERGENCY_CONNECTION_RESET
+      - EMERGENCY_MODE_SIMPLIFIED
+      - TARGET_DAILY_CALLS_
+      - TARGET_
+      - MIN_VOLUME_
+      - MIN_PRICE_
+      - MAX_PRICE_
+      - MAX_SPREAD_PERCENTAGE
+      - DATA_VALIDATION_ENABLED
+      - DATA_SANITIZATION_ENABLED
+      - DATA_NORMALIZATION_ENABLED
+      - DATA_COMPLETENESS_CHECK
+      - DATA_CONSISTENCY_CHECK
+      - DATA_FRESHNESS_CHECK
+    exact_keys:
+      - BROKER_TYPE
+      - CONNECTION_TIMEOUT_SECONDS
+      - COST_ALERT_THRESHOLD
+      - EMERGENCY_LOGGING_LEVEL
+      - MIN_VOLUME_THRESHOLD
+      - MIN_PRICE_THRESHOLD
+      - MAX_PRICE_THRESHOLD
+
+  ORB_SO:
+    classification: KEEP_PUBLIC
+    file: ORBSO.env
+    key_prefixes:
+      - SO_
+      - ORB_WINDOW_
+      - ORR_
+      - ENABLE_ORB_STRATEGY
+
+  ORB_0DTE:
+    classification: MERGE_INTO_PROFILE
+    file: ORB0DTE.env
+    key_prefixes:
+      - "0DTE_"
+      - ORB_0DTE_
+      - ORB_OPTIONS_MONITOR
+
+  TRENDLINE_0DTE:
+    classification: MERGE_INTO_PROFILE
+    file: Trendline0DTE.env
+    key_prefixes:
+      - TRENDLINE_
+      - ENABLE_TRENDLINE_STRATEGY
+
+  OPTIONS_EXIT:
+    classification: MERGE_INTO_PROFILE
+    description: Shared option exit / quote policy; path files may override last-wins.
+    files: [Shared.env, ORB0DTE.env, Trendline0DTE.env, Risk.env]
+    key_prefixes:
+      - OPTION_STEALTH_
+      - OPTION_QUOTE_
+      - ORB_0DTE_SPREAD_OPEN_GRACE_
+      - OPTION_0DTE_FAST_
+      - STEALTH_
+
+  RISK:
+    classification: KEEP_PUBLIC
+    file: Risk.env
+    notes: Global safety ceilings, slip, confidence sizing, kill switches.
+    key_prefixes:
+      - RISK_
+      - SLIP_
+      - MAX_OPEN_POSITIONS
+      - POSITION_SIZE
+      - KILL_SWITCH
+      - CIRCUIT_BREAKER
+      - DRAWDOWN_
+      - EXPOSURE_
+      - ULTRA_HIGH_CONFIDENCE_
+      - HIGH_CONFIDENCE_
+      - MEDIUM_CONFIDENCE_
+      - STANDARD_STRATEGY_RISK_
+      - ADVANCED_STRATEGY_RISK_
+      - QUANTUM_STRATEGY_RISK_
+      - WIN_STREAK_
+      - POSITION_ISOLATION_
+      - IGNORE_MANUAL_POSITIONS
+      - HIGH_VOLATILITY_SYMBOLS_RISK_
+      - MEDIUM_VOLATILITY_SYMBOLS_RISK_
+      - LOW_VOLATILITY_SYMBOLS_RISK_
+      - BULL_MARKET_RISK_
+      - BEAR_MARKET_RISK_
+      - SIDEWAYS_MARKET_RISK_
+      - VOLATILE_MARKET_RISK_
+      - RISK_ALERT_THRESHOLD_
+
+  ALERTS:
+    classification: KEEP_PUBLIC
+    file: Alerts.env
+    key_prefixes:
+      - TELEGRAM_
+      - ALERT_
+      - WEBHOOK_
+      - EMAIL_
+      - SMTP_
+      - PRIME_ALERT_
+      - WEEKLY_PNL_
+      - MONTHLY_PNL_
+      - GAIN_THRESHOLD_ALERT_
+      - DRAWDOWN_THRESHOLD_ALERT_
+      - MAX_ALERTS_PER_DAY
