@@ -1,0 +1,21 @@
+# Easy Collector - Cloud Build (Collector-only, ~800K upload)
+# Submit only easyCollector:  ./deploy-collector.sh  (from ORB root)
+# Build context = workspace root (easyCollector contents). No ORB/0DTE code.
+
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    id: build
+    dir: '.'
+    args: ['build', '-f', 'Dockerfile', '-t', 'gcr.io/$PROJECT_ID/easy-collector:latest', '.']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/easy-collector:latest']
+
+images:
+  - 'gcr.io/$PROJECT_ID/easy-collector:latest'
+
+options:
+  machineType: 'E2_HIGHCPU_8'
+  logging: CLOUD_LOGGING_ONLY
+
+timeout: '1200s'

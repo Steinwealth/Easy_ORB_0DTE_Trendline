@@ -1,0 +1,1 @@
+"""Easy Collector - Utilities Package"""
