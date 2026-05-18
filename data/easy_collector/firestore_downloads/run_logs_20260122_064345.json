@@ -1,0 +1,398 @@
+[
+  {
+    "successful": 0,
+    "session": "ASIA",
+    "timestamp": "2026-01-22 00:15:08.953097+00:00",
+    "market": "CRYPTO",
+    "doc_id": "CRYPTO_ASIA_ORB_20260122_001508",
+    "failed": 4,
+    "duration_seconds": 0.012608766555786133,
+    "total_snapshots": 4,
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "snapshot_type": "ORB",
+    "_document_id": "CRYPTO_ASIA_ORB_20260122_001508",
+    "_collected_at": "2026-01-22T14:43:45.947340+00:00"
+  },
+  {
+    "failed": 4,
+    "market": "CRYPTO",
+    "total_snapshots": 4,
+    "doc_id": "CRYPTO_ASIA_OUTCOME_20260121_075513",
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "duration_seconds": 0.016394615173339844,
+    "snapshot_type": "OUTCOME",
+    "timestamp": "2026-01-21 07:55:13.489025+00:00",
+    "successful": 0,
+    "session": "ASIA",
+    "_document_id": "CRYPTO_ASIA_OUTCOME_20260121_075513",
+    "_collected_at": "2026-01-22T14:43:45.947371+00:00"
+  },
+  {
+    "errors": [
+      "BTC-PERP: Empty OHLCV DataFrame",
+      "ETH-PERP: Empty OHLCV DataFrame",
+      "SOL-PERP: Empty OHLCV DataFrame",
+      "XRP-PERP: Empty OHLCV DataFrame"
+    ],
+    "doc_id": "CRYPTO_ASIA_OUTCOME_20260122_075511_201597",
+    "total_snapshots": 4,
+    "session": "ASIA",
+    "successful": 0,
+    "market": "CRYPTO",
+    "timestamp": "2026-01-22 07:55:11.201597+00:00",
+    "failed": 4,
+    "collection_timestamp": "2026-01-22 07:55:11.311000+00:00",
+    "duration_seconds": 0.02057361602783203,
+    "snapshot_type": "OUTCOME",
+    "_document_id": "CRYPTO_ASIA_OUTCOME_20260122_075511_201597",
+    "_collected_at": "2026-01-22T14:43:45.947385+00:00"
+  },
+  {
+    "doc_id": "CRYPTO_ASIA_SIGNAL_20260122_010013",
+    "snapshot_type": "SIGNAL",
+    "session": "ASIA",
+    "market": "CRYPTO",
+    "successful": 0,
+    "timestamp": "2026-01-22 01:00:13.382443+00:00",
+    "total_snapshots": 4,
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "duration_seconds": 0.009279966354370117,
+    "failed": 4,
+    "_document_id": "CRYPTO_ASIA_SIGNAL_20260122_010013",
+    "_collected_at": "2026-01-22T14:43:45.947396+00:00"
+  },
+  {
+    "market": "CRYPTO",
+    "doc_id": "CRYPTO_LONDON_ORB_20260121_081510",
+    "duration_seconds": 0.016230344772338867,
+    "total_snapshots": 4,
+    "failed": 4,
+    "timestamp": "2026-01-21 08:15:10.384920+00:00",
+    "snapshot_type": "ORB",
+    "session": "LONDON",
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "successful": 0,
+    "_document_id": "CRYPTO_LONDON_ORB_20260121_081510",
+    "_collected_at": "2026-01-22T14:43:45.947406+00:00"
+  },
+  {
+    "collection_timestamp": "2026-01-22 08:15:11.081000+00:00",
+    "market": "CRYPTO",
+    "duration_seconds": 0.017454147338867188,
+    "failed": 4,
+    "doc_id": "CRYPTO_LONDON_ORB_20260122_081510_959581",
+    "total_snapshots": 4,
+    "snapshot_type": "ORB",
+    "successful": 0,
+    "errors": [
+      "BTC-PERP: Empty OHLCV DataFrame",
+      "ETH-PERP: Empty OHLCV DataFrame",
+      "SOL-PERP: Empty OHLCV DataFrame",
+      "XRP-PERP: Empty OHLCV DataFrame"
+    ],
+    "timestamp": "2026-01-22 08:15:10.959581+00:00",
+    "session": "LONDON",
+    "_document_id": "CRYPTO_LONDON_ORB_20260122_081510_959581",
+    "_collected_at": "2026-01-22T14:43:45.947417+00:00"
+  },
+  {
+    "failed": 4,
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "session": "LONDON",
+    "timestamp": "2026-01-21 12:55:10.907500+00:00",
+    "duration_seconds": 0.013825178146362305,
+    "doc_id": "CRYPTO_LONDON_OUTCOME_20260121_125510",
+    "snapshot_type": "OUTCOME",
+    "successful": 0,
+    "total_snapshots": 4,
+    "market": "CRYPTO",
+    "_document_id": "CRYPTO_LONDON_OUTCOME_20260121_125510",
+    "_collected_at": "2026-01-22T14:43:45.947430+00:00"
+  },
+  {
+    "total_snapshots": 4,
+    "successful": 0,
+    "doc_id": "CRYPTO_LONDON_OUTCOME_20260122_125511_628647",
+    "session": "LONDON",
+    "duration_seconds": 0.020246505737304688,
+    "failed": 4,
+    "market": "CRYPTO",
+    "errors": [
+      "BTC-PERP: Empty OHLCV DataFrame",
+      "ETH-PERP: Empty OHLCV DataFrame",
+      "SOL-PERP: Empty OHLCV DataFrame",
+      "XRP-PERP: Empty OHLCV DataFrame"
+    ],
+    "snapshot_type": "OUTCOME",
+    "collection_timestamp": "2026-01-22 12:55:11.741000+00:00",
+    "timestamp": "2026-01-22 12:55:11.628647+00:00",
+    "_document_id": "CRYPTO_LONDON_OUTCOME_20260122_125511_628647",
+    "_collected_at": "2026-01-22T14:43:45.947440+00:00"
+  },
+  {
+    "timestamp": "2026-01-21 09:00:09.788457+00:00",
+    "session": "LONDON",
+    "doc_id": "CRYPTO_LONDON_SIGNAL_20260121_090009",
+    "successful": 0,
+    "failed": 4,
+    "total_snapshots": 4,
+    "snapshot_type": "SIGNAL",
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "market": "CRYPTO",
+    "duration_seconds": 0.012832164764404297,
+    "_document_id": "CRYPTO_LONDON_SIGNAL_20260121_090009",
+    "_collected_at": "2026-01-22T14:43:45.947450+00:00"
+  },
+  {
+    "snapshot_type": "SIGNAL",
+    "total_snapshots": 4,
+    "collection_timestamp": "2026-01-22 09:00:11.265000+00:00",
+    "market": "CRYPTO",
+    "doc_id": "CRYPTO_LONDON_SIGNAL_20260122_090011_114109",
+    "errors": [
+      "BTC-PERP: Empty OHLCV DataFrame",
+      "ETH-PERP: Empty OHLCV DataFrame",
+      "SOL-PERP: Empty OHLCV DataFrame",
+      "XRP-PERP: Empty OHLCV DataFrame"
+    ],
+    "session": "LONDON",
+    "timestamp": "2026-01-22 09:00:11.114109+00:00",
+    "duration_seconds": 0.03594088554382324,
+    "failed": 4,
+    "successful": 0,
+    "_document_id": "CRYPTO_LONDON_SIGNAL_20260122_090011_114109",
+    "_collected_at": "2026-01-22T14:43:45.947474+00:00"
+  },
+  {
+    "total_snapshots": 4,
+    "session": "RESET",
+    "doc_id": "CRYPTO_RESET_ORB_20260121_221515",
+    "market": "CRYPTO",
+    "timestamp": "2026-01-21 22:15:15.180105+00:00",
+    "duration_seconds": 0.010079145431518555,
+    "snapshot_type": "ORB",
+    "failed": 4,
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "successful": 0,
+    "_document_id": "CRYPTO_RESET_ORB_20260121_221515",
+    "_collected_at": "2026-01-22T14:43:45.947482+00:00"
+  },
+  {
+    "total_snapshots": 4,
+    "failed": 4,
+    "timestamp": "2026-01-21 23:55:11.203776+00:00",
+    "session": "RESET",
+    "duration_seconds": 0.013406515121459961,
+    "market": "CRYPTO",
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "doc_id": "CRYPTO_RESET_OUTCOME_20260121_235511",
+    "successful": 0,
+    "snapshot_type": "OUTCOME",
+    "_document_id": "CRYPTO_RESET_OUTCOME_20260121_235511",
+    "_collected_at": "2026-01-22T14:43:45.947491+00:00"
+  },
+  {
+    "total_snapshots": 4,
+    "snapshot_type": "SIGNAL",
+    "market": "CRYPTO",
+    "doc_id": "CRYPTO_RESET_SIGNAL_20260121_230019",
+    "successful": 0,
+    "failed": 4,
+    "timestamp": "2026-01-21 23:00:19.666085+00:00",
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "session": "RESET",
+    "duration_seconds": 0.010643482208251953,
+    "_document_id": "CRYPTO_RESET_SIGNAL_20260121_230019",
+    "_collected_at": "2026-01-22T14:43:45.947500+00:00"
+  },
+  {
+    "session": "US",
+    "doc_id": "CRYPTO_US_ORB_20260121_131512",
+    "duration_seconds": 0.013719797134399414,
+    "market": "CRYPTO",
+    "snapshot_type": "ORB",
+    "successful": 0,
+    "total_snapshots": 4,
+    "timestamp": "2026-01-21 13:15:12.753031+00:00",
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "failed": 4,
+    "_document_id": "CRYPTO_US_ORB_20260121_131512",
+    "_collected_at": "2026-01-22T14:43:45.947509+00:00"
+  },
+  {
+    "market": "CRYPTO",
+    "timestamp": "2026-01-22 13:15:11.775684+00:00",
+    "failed": 4,
+    "duration_seconds": 0.016817569732666016,
+    "session": "US",
+    "collection_timestamp": "2026-01-22 13:15:11.907000+00:00",
+    "snapshot_type": "ORB",
+    "successful": 0,
+    "doc_id": "CRYPTO_US_ORB_20260122_131511_775684",
+    "total_snapshots": 4,
+    "errors": [
+      "BTC-PERP: Empty OHLCV DataFrame",
+      "ETH-PERP: Empty OHLCV DataFrame",
+      "SOL-PERP: Empty OHLCV DataFrame",
+      "XRP-PERP: Empty OHLCV DataFrame"
+    ],
+    "_document_id": "CRYPTO_US_ORB_20260122_131511_775684",
+    "_collected_at": "2026-01-22T14:43:45.947518+00:00"
+  },
+  {
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "session": "US",
+    "duration_seconds": 0.011180877685546875,
+    "total_snapshots": 4,
+    "successful": 0,
+    "failed": 4,
+    "snapshot_type": "OUTCOME",
+    "market": "CRYPTO",
+    "doc_id": "CRYPTO_US_OUTCOME_20260121_215510",
+    "timestamp": "2026-01-21 21:55:10.599449+00:00",
+    "_document_id": "CRYPTO_US_OUTCOME_20260121_215510",
+    "_collected_at": "2026-01-22T14:43:45.947529+00:00"
+  },
+  {
+    "failed": 4,
+    "successful": 0,
+    "snapshot_type": "SIGNAL",
+    "doc_id": "CRYPTO_US_SIGNAL_20260121_140018",
+    "timestamp": "2026-01-21 14:00:18.723616+00:00",
+    "total_snapshots": 4,
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "duration_seconds": 0.0149383544921875,
+    "market": "CRYPTO",
+    "session": "US",
+    "_document_id": "CRYPTO_US_SIGNAL_20260121_140018",
+    "_collected_at": "2026-01-22T14:43:45.947538+00:00"
+  },
+  {
+    "doc_id": "CRYPTO_US_SIGNAL_20260122_140018_697217",
+    "errors": [
+      "BTC-PERP: Empty OHLCV DataFrame",
+      "ETH-PERP: Empty OHLCV DataFrame",
+      "SOL-PERP: Empty OHLCV DataFrame",
+      "XRP-PERP: Empty OHLCV DataFrame"
+    ],
+    "duration_seconds": 0.017168045043945312,
+    "session": "US",
+    "total_snapshots": 4,
+    "snapshot_type": "SIGNAL",
+    "market": "CRYPTO",
+    "collection_timestamp": "2026-01-22 14:00:18.831000+00:00",
+    "timestamp": "2026-01-22 14:00:18.697217+00:00",
+    "successful": 0,
+    "failed": 4,
+    "_document_id": "CRYPTO_US_SIGNAL_20260122_140018_697217",
+    "_collected_at": "2026-01-22T14:43:45.947548+00:00"
+  },
+  {
+    "failed": 29,
+    "timestamp": "2026-01-21 14:45:24.478307+00:00",
+    "market": "US",
+    "total_snapshots": 29,
+    "errors": [
+      "SPX: No OHLCV data",
+      "SPY: No OHLCV data",
+      "QQQ: No OHLCV data",
+      "IWM: No OHLCV data",
+      "VIX: No OHLCV data",
+      "GLD: No OHLCV data",
+      "NVDA: No OHLCV data",
+      "AMD: No OHLCV data",
+      "TSLA: No OHLCV data",
+      "META: No OHLCV data"
+    ],
+    "duration_seconds": 8.056174516677856,
+    "doc_id": "US_ORB_20260121_144524",
+    "snapshot_type": "ORB",
+    "successful": 0,
+    "_document_id": "US_ORB_20260121_144524",
+    "_collected_at": "2026-01-22T14:43:45.947558+00:00"
+  },
+  {
+    "successful": 0,
+    "doc_id": "US_SIGNAL_20260121_153019",
+    "market": "US",
+    "total_snapshots": 29,
+    "timestamp": "2026-01-21 15:30:19.304182+00:00",
+    "errors": [
+      "SPX: No OHLCV data",
+      "SPY: No OHLCV data",
+      "QQQ: No OHLCV data",
+      "IWM: No OHLCV data",
+      "VIX: No OHLCV data",
+      "GLD: No OHLCV data",
+      "NVDA: No OHLCV data",
+      "AMD: No OHLCV data",
+      "TSLA: No OHLCV data",
+      "META: No OHLCV data"
+    ],
+    "duration_seconds": 6.39339280128479,
+    "snapshot_type": "SIGNAL",
+    "failed": 29,
+    "_document_id": "US_SIGNAL_20260121_153019",
+    "_collected_at": "2026-01-22T14:43:45.947568+00:00"
+  }
+]

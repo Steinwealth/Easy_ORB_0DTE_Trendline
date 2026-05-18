@@ -1,0 +1,518 @@
+[
+  {
+    "timestamp": "2026-01-22 00:15:08.953097+00:00",
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "snapshot_type": "ORB",
+    "doc_id": "CRYPTO_ASIA_ORB_20260122_001508",
+    "total_snapshots": 4,
+    "market": "CRYPTO",
+    "duration_seconds": 0.012608766555786133,
+    "successful": 0,
+    "session": "ASIA",
+    "failed": 4,
+    "_document_id": "CRYPTO_ASIA_ORB_20260122_001508",
+    "_collected_at": "2026-01-23T15:07:08.606978+00:00"
+  },
+  {
+    "successful": 0,
+    "session": "ASIA",
+    "snapshot_type": "OUTCOME",
+    "timestamp": "2026-01-21 07:55:13.489025+00:00",
+    "doc_id": "CRYPTO_ASIA_OUTCOME_20260121_075513",
+    "failed": 4,
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "duration_seconds": 0.016394615173339844,
+    "total_snapshots": 4,
+    "market": "CRYPTO",
+    "_document_id": "CRYPTO_ASIA_OUTCOME_20260121_075513",
+    "_collected_at": "2026-01-23T15:07:08.606996+00:00"
+  },
+  {
+    "successful": 0,
+    "collection_timestamp": "2026-01-22 07:55:11.311000+00:00",
+    "doc_id": "CRYPTO_ASIA_OUTCOME_20260122_075511_201597",
+    "total_snapshots": 4,
+    "market": "CRYPTO",
+    "session": "ASIA",
+    "timestamp": "2026-01-22 07:55:11.201597+00:00",
+    "duration_seconds": 0.02057361602783203,
+    "snapshot_type": "OUTCOME",
+    "errors": [
+      "BTC-PERP: Empty OHLCV DataFrame",
+      "ETH-PERP: Empty OHLCV DataFrame",
+      "SOL-PERP: Empty OHLCV DataFrame",
+      "XRP-PERP: Empty OHLCV DataFrame"
+    ],
+    "failed": 4,
+    "_document_id": "CRYPTO_ASIA_OUTCOME_20260122_075511_201597",
+    "_collected_at": "2026-01-23T15:07:08.607002+00:00"
+  },
+  {
+    "collection_timestamp": "2026-01-23 07:55:11.578000+00:00",
+    "doc_id": "CRYPTO_ASIA_OUTCOME_20260123_075511_440837",
+    "timestamp": "2026-01-23 07:55:11.440837+00:00",
+    "errors": [
+      "BTC-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-7.99785969, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "ETH-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-98.62864918999998, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "SOL-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-898.8871376, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "XRP-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-21485.220982, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float"
+    ],
+    "snapshot_type": "OUTCOME",
+    "session": "ASIA",
+    "market": "CRYPTO",
+    "successful": 0,
+    "duration_seconds": 1.3727641105651855,
+    "failed": 4,
+    "total_snapshots": 4,
+    "_document_id": "CRYPTO_ASIA_OUTCOME_20260123_075511_440837",
+    "_collected_at": "2026-01-23T15:07:08.607006+00:00"
+  },
+  {
+    "snapshot_type": "SIGNAL",
+    "market": "CRYPTO",
+    "failed": 4,
+    "total_snapshots": 4,
+    "duration_seconds": 0.009279966354370117,
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "successful": 0,
+    "session": "ASIA",
+    "doc_id": "CRYPTO_ASIA_SIGNAL_20260122_010013",
+    "timestamp": "2026-01-22 01:00:13.382443+00:00",
+    "_document_id": "CRYPTO_ASIA_SIGNAL_20260122_010013",
+    "_collected_at": "2026-01-23T15:07:08.607010+00:00"
+  },
+  {
+    "successful": 0,
+    "snapshot_type": "ORB",
+    "failed": 4,
+    "doc_id": "CRYPTO_LONDON_ORB_20260121_081510",
+    "total_snapshots": 4,
+    "timestamp": "2026-01-21 08:15:10.384920+00:00",
+    "session": "LONDON",
+    "duration_seconds": 0.016230344772338867,
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "market": "CRYPTO",
+    "_document_id": "CRYPTO_LONDON_ORB_20260121_081510",
+    "_collected_at": "2026-01-23T15:07:08.607014+00:00"
+  },
+  {
+    "successful": 0,
+    "duration_seconds": 0.017454147338867188,
+    "market": "CRYPTO",
+    "snapshot_type": "ORB",
+    "errors": [
+      "BTC-PERP: Empty OHLCV DataFrame",
+      "ETH-PERP: Empty OHLCV DataFrame",
+      "SOL-PERP: Empty OHLCV DataFrame",
+      "XRP-PERP: Empty OHLCV DataFrame"
+    ],
+    "collection_timestamp": "2026-01-22 08:15:11.081000+00:00",
+    "timestamp": "2026-01-22 08:15:10.959581+00:00",
+    "session": "LONDON",
+    "doc_id": "CRYPTO_LONDON_ORB_20260122_081510_959581",
+    "failed": 4,
+    "total_snapshots": 4,
+    "_document_id": "CRYPTO_LONDON_ORB_20260122_081510_959581",
+    "_collected_at": "2026-01-23T15:07:08.607018+00:00"
+  },
+  {
+    "total_snapshots": 4,
+    "doc_id": "CRYPTO_LONDON_ORB_20260123_081506_708888",
+    "timestamp": "2026-01-23 08:15:06.708888+00:00",
+    "market": "CRYPTO",
+    "snapshot_type": "ORB",
+    "failed": 4,
+    "successful": 0,
+    "duration_seconds": 1.3202838897705078,
+    "errors": [
+      "BTC-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=22.58486598, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "ETH-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=73.36301724, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "SOL-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=199.11648252999998, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "XRP-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=62002.61061199999, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float"
+    ],
+    "session": "LONDON",
+    "collection_timestamp": "2026-01-23 08:15:06.803000+00:00",
+    "_document_id": "CRYPTO_LONDON_ORB_20260123_081506_708888",
+    "_collected_at": "2026-01-23T15:07:08.607023+00:00"
+  },
+  {
+    "failed": 4,
+    "session": "LONDON",
+    "timestamp": "2026-01-21 12:55:10.907500+00:00",
+    "successful": 0,
+    "market": "CRYPTO",
+    "total_snapshots": 4,
+    "snapshot_type": "OUTCOME",
+    "doc_id": "CRYPTO_LONDON_OUTCOME_20260121_125510",
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "duration_seconds": 0.013825178146362305,
+    "_document_id": "CRYPTO_LONDON_OUTCOME_20260121_125510",
+    "_collected_at": "2026-01-23T15:07:08.607026+00:00"
+  },
+  {
+    "market": "CRYPTO",
+    "duration_seconds": 0.020246505737304688,
+    "doc_id": "CRYPTO_LONDON_OUTCOME_20260122_125511_628647",
+    "errors": [
+      "BTC-PERP: Empty OHLCV DataFrame",
+      "ETH-PERP: Empty OHLCV DataFrame",
+      "SOL-PERP: Empty OHLCV DataFrame",
+      "XRP-PERP: Empty OHLCV DataFrame"
+    ],
+    "timestamp": "2026-01-22 12:55:11.628647+00:00",
+    "successful": 0,
+    "session": "LONDON",
+    "total_snapshots": 4,
+    "collection_timestamp": "2026-01-22 12:55:11.741000+00:00",
+    "failed": 4,
+    "snapshot_type": "OUTCOME",
+    "_document_id": "CRYPTO_LONDON_OUTCOME_20260122_125511_628647",
+    "_collected_at": "2026-01-23T15:07:08.607030+00:00"
+  },
+  {
+    "failed": 4,
+    "timestamp": "2026-01-23 12:55:17.440021+00:00",
+    "session": "LONDON",
+    "snapshot_type": "OUTCOME",
+    "market": "CRYPTO",
+    "doc_id": "CRYPTO_LONDON_OUTCOME_20260123_125517_440021",
+    "successful": 0,
+    "collection_timestamp": "2026-01-23 12:55:17.548000+00:00",
+    "total_snapshots": 4,
+    "duration_seconds": 1.3842089176177979,
+    "errors": [
+      "BTC-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-4.3245838, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "ETH-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-1.8323097500000074, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "SOL-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-552.40649558, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "XRP-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-63978.946497000004, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float"
+    ],
+    "_document_id": "CRYPTO_LONDON_OUTCOME_20260123_125517_440021",
+    "_collected_at": "2026-01-23T15:07:08.607035+00:00"
+  },
+  {
+    "market": "CRYPTO",
+    "snapshot_type": "SIGNAL",
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "session": "LONDON",
+    "failed": 4,
+    "duration_seconds": 0.012832164764404297,
+    "total_snapshots": 4,
+    "successful": 0,
+    "doc_id": "CRYPTO_LONDON_SIGNAL_20260121_090009",
+    "timestamp": "2026-01-21 09:00:09.788457+00:00",
+    "_document_id": "CRYPTO_LONDON_SIGNAL_20260121_090009",
+    "_collected_at": "2026-01-23T15:07:08.607038+00:00"
+  },
+  {
+    "session": "LONDON",
+    "timestamp": "2026-01-22 09:00:11.114109+00:00",
+    "errors": [
+      "BTC-PERP: Empty OHLCV DataFrame",
+      "ETH-PERP: Empty OHLCV DataFrame",
+      "SOL-PERP: Empty OHLCV DataFrame",
+      "XRP-PERP: Empty OHLCV DataFrame"
+    ],
+    "snapshot_type": "SIGNAL",
+    "total_snapshots": 4,
+    "doc_id": "CRYPTO_LONDON_SIGNAL_20260122_090011_114109",
+    "duration_seconds": 0.03594088554382324,
+    "successful": 0,
+    "market": "CRYPTO",
+    "failed": 4,
+    "collection_timestamp": "2026-01-22 09:00:11.265000+00:00",
+    "_document_id": "CRYPTO_LONDON_SIGNAL_20260122_090011_114109",
+    "_collected_at": "2026-01-23T15:07:08.607042+00:00"
+  },
+  {
+    "collection_timestamp": "2026-01-23 09:00:07.445000+00:00",
+    "duration_seconds": 1.2979092597961426,
+    "snapshot_type": "SIGNAL",
+    "session": "LONDON",
+    "market": "CRYPTO",
+    "failed": 4,
+    "total_snapshots": 4,
+    "timestamp": "2026-01-23 09:00:07.297237+00:00",
+    "doc_id": "CRYPTO_LONDON_SIGNAL_20260123_090007_297237",
+    "successful": 0,
+    "errors": [
+      "BTC-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=5.2924807099999995, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "ETH-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-65.83762654, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "SOL-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-256.30832892, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "XRP-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-59305.76143700001, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float"
+    ],
+    "_document_id": "CRYPTO_LONDON_SIGNAL_20260123_090007_297237",
+    "_collected_at": "2026-01-23T15:07:08.607046+00:00"
+  },
+  {
+    "successful": 0,
+    "failed": 4,
+    "snapshot_type": "ORB",
+    "doc_id": "CRYPTO_RESET_ORB_20260121_221515",
+    "total_snapshots": 4,
+    "session": "RESET",
+    "market": "CRYPTO",
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "duration_seconds": 0.010079145431518555,
+    "timestamp": "2026-01-21 22:15:15.180105+00:00",
+    "_document_id": "CRYPTO_RESET_ORB_20260121_221515",
+    "_collected_at": "2026-01-23T15:07:08.607050+00:00"
+  },
+  {
+    "duration_seconds": 0.013406515121459961,
+    "snapshot_type": "OUTCOME",
+    "session": "RESET",
+    "timestamp": "2026-01-21 23:55:11.203776+00:00",
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "doc_id": "CRYPTO_RESET_OUTCOME_20260121_235511",
+    "total_snapshots": 4,
+    "successful": 0,
+    "failed": 4,
+    "market": "CRYPTO",
+    "_document_id": "CRYPTO_RESET_OUTCOME_20260121_235511",
+    "_collected_at": "2026-01-23T15:07:08.607053+00:00"
+  },
+  {
+    "duration_seconds": 0.010643482208251953,
+    "market": "CRYPTO",
+    "total_snapshots": 4,
+    "failed": 4,
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "snapshot_type": "SIGNAL",
+    "doc_id": "CRYPTO_RESET_SIGNAL_20260121_230019",
+    "successful": 0,
+    "timestamp": "2026-01-21 23:00:19.666085+00:00",
+    "session": "RESET",
+    "_document_id": "CRYPTO_RESET_SIGNAL_20260121_230019",
+    "_collected_at": "2026-01-23T15:07:08.607058+00:00"
+  },
+  {
+    "duration_seconds": 0.013719797134399414,
+    "session": "US",
+    "successful": 0,
+    "failed": 4,
+    "snapshot_type": "ORB",
+    "timestamp": "2026-01-21 13:15:12.753031+00:00",
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "market": "CRYPTO",
+    "total_snapshots": 4,
+    "doc_id": "CRYPTO_US_ORB_20260121_131512",
+    "_document_id": "CRYPTO_US_ORB_20260121_131512",
+    "_collected_at": "2026-01-23T15:07:08.607062+00:00"
+  },
+  {
+    "session": "US",
+    "collection_timestamp": "2026-01-22 13:15:11.907000+00:00",
+    "snapshot_type": "ORB",
+    "timestamp": "2026-01-22 13:15:11.775684+00:00",
+    "errors": [
+      "BTC-PERP: Empty OHLCV DataFrame",
+      "ETH-PERP: Empty OHLCV DataFrame",
+      "SOL-PERP: Empty OHLCV DataFrame",
+      "XRP-PERP: Empty OHLCV DataFrame"
+    ],
+    "market": "CRYPTO",
+    "successful": 0,
+    "total_snapshots": 4,
+    "duration_seconds": 0.016817569732666016,
+    "doc_id": "CRYPTO_US_ORB_20260122_131511_775684",
+    "failed": 4,
+    "_document_id": "CRYPTO_US_ORB_20260122_131511_775684",
+    "_collected_at": "2026-01-23T15:07:08.607066+00:00"
+  },
+  {
+    "doc_id": "CRYPTO_US_ORB_20260123_131509_075653",
+    "session": "US",
+    "collection_timestamp": "2026-01-23 13:15:09.183000+00:00",
+    "total_snapshots": 4,
+    "successful": 0,
+    "snapshot_type": "ORB",
+    "duration_seconds": 1.3898935317993164,
+    "errors": [
+      "BTC-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-5.15343518, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "ETH-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-47.813299029999996, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "SOL-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=6674.76104519, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "XRP-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=30387.080179999997, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float"
+    ],
+    "timestamp": "2026-01-23 13:15:09.075653+00:00",
+    "market": "CRYPTO",
+    "failed": 4,
+    "_document_id": "CRYPTO_US_ORB_20260123_131509_075653",
+    "_collected_at": "2026-01-23T15:07:08.607070+00:00"
+  },
+  {
+    "failed": 4,
+    "snapshot_type": "OUTCOME",
+    "market": "CRYPTO",
+    "doc_id": "CRYPTO_US_OUTCOME_20260121_215510",
+    "successful": 0,
+    "total_snapshots": 4,
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "duration_seconds": 0.011180877685546875,
+    "session": "US",
+    "timestamp": "2026-01-21 21:55:10.599449+00:00",
+    "_document_id": "CRYPTO_US_OUTCOME_20260121_215510",
+    "_collected_at": "2026-01-23T15:07:08.607074+00:00"
+  },
+  {
+    "doc_id": "CRYPTO_US_SIGNAL_20260121_140018",
+    "failed": 4,
+    "successful": 0,
+    "errors": [
+      "BTC-PERP: No OHLCV data",
+      "ETH-PERP: No OHLCV data",
+      "SOL-PERP: No OHLCV data",
+      "XRP-PERP: No OHLCV data"
+    ],
+    "duration_seconds": 0.0149383544921875,
+    "market": "CRYPTO",
+    "session": "US",
+    "total_snapshots": 4,
+    "snapshot_type": "SIGNAL",
+    "timestamp": "2026-01-21 14:00:18.723616+00:00",
+    "_document_id": "CRYPTO_US_SIGNAL_20260121_140018",
+    "_collected_at": "2026-01-23T15:07:08.607077+00:00"
+  },
+  {
+    "errors": [
+      "BTC-PERP: Empty OHLCV DataFrame",
+      "ETH-PERP: Empty OHLCV DataFrame",
+      "SOL-PERP: Empty OHLCV DataFrame",
+      "XRP-PERP: Empty OHLCV DataFrame"
+    ],
+    "failed": 4,
+    "total_snapshots": 4,
+    "collection_timestamp": "2026-01-22 14:00:18.831000+00:00",
+    "doc_id": "CRYPTO_US_SIGNAL_20260122_140018_697217",
+    "session": "US",
+    "market": "CRYPTO",
+    "snapshot_type": "SIGNAL",
+    "timestamp": "2026-01-22 14:00:18.697217+00:00",
+    "duration_seconds": 0.017168045043945312,
+    "successful": 0,
+    "_document_id": "CRYPTO_US_SIGNAL_20260122_140018_697217",
+    "_collected_at": "2026-01-23T15:07:08.607083+00:00"
+  },
+  {
+    "timestamp": "2026-01-23 14:00:08.470133+00:00",
+    "successful": 0,
+    "session": "US",
+    "market": "CRYPTO",
+    "total_snapshots": 4,
+    "duration_seconds": 1.4384596347808838,
+    "failed": 4,
+    "errors": [
+      "BTC-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-5.27219401, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "ETH-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-132.55153459999997, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "SOL-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-2294.3593051400003, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float",
+      "XRP-PERP: 1 validation error for VolumeVWAPData\nvolume_delta\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-12456.791830000002, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.5/v/int_from_float"
+    ],
+    "snapshot_type": "SIGNAL",
+    "collection_timestamp": "2026-01-23 14:00:08.571000+00:00",
+    "doc_id": "CRYPTO_US_SIGNAL_20260123_140008_470133",
+    "_document_id": "CRYPTO_US_SIGNAL_20260123_140008_470133",
+    "_collected_at": "2026-01-23T15:07:08.607087+00:00"
+  },
+  {
+    "errors": [
+      "SPX: No OHLCV data",
+      "SPY: No OHLCV data",
+      "QQQ: No OHLCV data",
+      "IWM: No OHLCV data",
+      "VIX: No OHLCV data",
+      "GLD: No OHLCV data",
+      "NVDA: No OHLCV data",
+      "AMD: No OHLCV data",
+      "TSLA: No OHLCV data",
+      "META: No OHLCV data"
+    ],
+    "timestamp": "2026-01-21 14:45:24.478307+00:00",
+    "duration_seconds": 8.056174516677856,
+    "total_snapshots": 29,
+    "successful": 0,
+    "market": "US",
+    "doc_id": "US_ORB_20260121_144524",
+    "failed": 29,
+    "snapshot_type": "ORB",
+    "_document_id": "US_ORB_20260121_144524",
+    "_collected_at": "2026-01-23T15:07:08.607092+00:00"
+  },
+  {
+    "total_snapshots": 29,
+    "duration_seconds": 6.39339280128479,
+    "snapshot_type": "SIGNAL",
+    "successful": 0,
+    "market": "US",
+    "timestamp": "2026-01-21 15:30:19.304182+00:00",
+    "doc_id": "US_SIGNAL_20260121_153019",
+    "failed": 29,
+    "errors": [
+      "SPX: No OHLCV data",
+      "SPY: No OHLCV data",
+      "QQQ: No OHLCV data",
+      "IWM: No OHLCV data",
+      "VIX: No OHLCV data",
+      "GLD: No OHLCV data",
+      "NVDA: No OHLCV data",
+      "AMD: No OHLCV data",
+      "TSLA: No OHLCV data",
+      "META: No OHLCV data"
+    ],
+    "_document_id": "US_SIGNAL_20260121_153019",
+    "_collected_at": "2026-01-23T15:07:08.607096+00:00"
+  }
+]

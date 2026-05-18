@@ -1,0 +1,96 @@
+symbol,leverage,category,underlying,avg_pnl,win_rate,notes
+SPY,1x,index,S&P 500,0.00,0.0,SPDR S&P 500 ETF (0DTE target)
+QQQ,1x,index,Nasdaq-100,0.00,0.0,ProShares Nasdaq-100 ETF (0DTE target)
+TQQQ,3x,index,Nasdaq-100,17.73,100.0,ProShares 3x Nasdaq bull
+SQQQ,3x,index,Nasdaq-100,17.73,100.0,ProShares 3x Nasdaq short
+MAGS,1x,index,Mag 7,0.00,0.0,Mag 7 ETF — Core Daily 0DTE (from 0dte_list)
+IWM,1x,index,Russell 2000,0.00,0.0,iShares Russell 2000 ETF — small-cap benchmark (from 0dte_list)
+RUT,1x,index,Russell 2000,18.26,71.4,Russell 2000 Index (replaces URTY on scan list)
+VIX,1x,volatility,VIX,0.00,0.0,Volatility Shares 1x VIX short
+GLD,1x,commodity,Gold,0.00,0.0,SPDR Gold Trust — commodity exposure (from 0dte_list)
+GLDM,1x,commodity,Gold,0.00,0.0,SPDR Gold MiniShares — physical gold exposure
+IAUM,1x,commodity,Gold,0.00,0.0,iShares Gold Trust — physical gold exposure
+GDX,1x,commodity,Gold Miners,0.00,0.0,VanEck Gold Miners ETF — commodity exposure (from 0dte_list)
+SLV,1x,commodity,Silver,0.00,0.0,iShares Silver Trust — commodity exposure (from 0dte_list)
+IBIT,1x,crypto,Bitcoin,0.00,0.0,iShares Bitcoin Trust — primary underlying ETF
+GBTC,1x,crypto,Bitcoin,0.00,0.0,Grayscale Bitcoin Trust — primary underlying ETF
+BITX,2x,crypto,Bitcoin,5.93,66.7,Volatility Shares 2x Bitcoin bull
+CRCL,2x,crypto,Circle,0.00,0.0,ProShares 2x Circle bull
+SOXL,3x,sector,Semiconductors,38.72,100.0,Direxion 3x Semiconductor bull
+SOXS,3x,sector,Semiconductors,38.72,100.0,Direxion 3x Semiconductor short
+SMH,1x,sector,Semiconductors,0.00,0.0,VanEck Semiconductor ETF — sector benchmark (from 0dte_list)
+NVDA,1x,equity,NVIDIA,0.00,0.0,NVIDIA Corp. — direct underlying
+MSFT,1x,equity,Microsoft,0.00,0.0,Microsoft Corp. — direct underlying
+AAPL,1x,equity,AAPL,0.00,0.0,Apple Inc. — Mega-cap / institutional momentum (from 0dte_list)
+GOOGL,1x,equity,GOOGL,0.00,0.0,Alphabet Inc. — Mega-cap / institutional momentum (from 0dte_list)
+AMZN,1x,equity,AMZN,0.00,0.0,Amazon.com Inc. — Mega-cap / institutional momentum (from 0dte_list)
+META,1x,equity,Meta,0.00,0.0,Meta Platforms Inc. — direct underlying
+AVGO,1x,equity,Broadcom,0.00,0.0,Broadcom Inc. — direct underlying
+TSLA,1x,equity,Tesla,0.00,0.0,Tesla Inc. — direct underlying
+TSLL,2x,stock,Tesla,18.50,100.0,Direxion 2x Tesla bull
+LLY,1x,equity,Eli Lilly,0.00,0.0,Eli Lilly and Company — primary underlying
+COST,1x,equity,COST,0.00,0.0,Costco — Retail leader (from 0dte_list)
+NFLX,1x,equity,NFLX,0.00,0.0,Netflix — Streaming leader (from 0dte_list)
+HD,1x,equity,HD,0.00,0.0,Home Depot — Retail giant (from 0dte_list)
+ASML,1x,equity,ASML,0.00,0.0,ASML Holding — Global chip bottleneck (from 0dte_list)
+AMD,1x,equity,AMD,0.00,0.0,Advanced Micro Devices Inc. — direct underlying
+AMDL,2x,stock,AMD,0.00,0.0,Direxion 2x AMD bull
+CSCO,1x,equity,Cisco,0.00,0.0,Cisco Systems Inc. — direct underlying
+PLTR,1x,equity,Palantir,0.00,0.0,Palantir Technologies Inc. — direct underlying
+PLTU,2x,stock,Palantir,5.31,60.0,Defiance 2x Palantir bull
+ARM,1x,equity,ARM,0.00,0.0,Arm Holdings — High beta (from 0dte_list)
+AMAT,1x,equity,AMAT,0.00,0.0,Applied Materials — Semiconductor equipment (from 0dte_list)
+QCOM,1x,equity,Qualcomm,0.00,0.0,Qualcomm Inc. — direct underlying for QCM* sleeves
+NOW,1x,equity,ServiceNow,0.00,0.0,ServiceNow Inc. — direct underlying
+UBER,1x,equity,Uber,0.00,0.0,Uber Technologies Inc. — direct underlying
+CEG,1x,equity,CEG,0.00,0.0,Constellation Energy — Energy (from 0dte_list)
+APP,1x,equity,APP,0.00,0.0,APP — from 0dte_list (ORB SO + 0DTE universe)
+MU,1x,equity,Micron,0.00,0.0,Micron Technology Inc. — direct underlying
+CRWD,1x,equity,CrowdStrike,0.00,0.0,CrowdStrike Holdings — ORB SO + 0DTE (thematic/sector momentum)
+PANW,1x,equity,Palo Alto Networks,0.00,0.0,Palo Alto Networks Inc. — primary underlying
+INTC,1x,equity,Intel,0.00,0.0,Intel Corp. — direct underlying
+MELI,1x,equity,MELI,0.00,0.0,MercadoLibre — Thematic momentum (from 0dte_list)
+LRCX,1x,equity,LRCX,0.00,0.0,Lam Research — Semiconductor equipment (from 0dte_list)
+MRVL,1x,equity,Marvell,0.00,0.0,Marvell Technology Inc. — direct underlying
+EQIX,1x,equity,EQIX,0.00,0.0,Equinix — Data centers (from 0dte_list)
+VRT,1x,equity,VRT,0.00,0.0,Vertiv Holdings Co
+COIN,1x,equity,Coinbase,0.00,0.0,Coinbase Global Inc. — primary underlying
+SNOW,1x,equity,SNOW,0.00,0.0,Snowflake — Data cloud (from 0dte_list)
+DELL,1x,equity,DELL,0.00,0.0,Dell Technologies Inc
+VST,1x,equity,VST,0.00,0.0,Vistra — Power generation (from 0dte_list)
+MSTR,1x,equity,MicroStrategy,0.00,0.0,MicroStrategy Inc. — direct underlying
+MSTZ,2x,stock,MSTR,0.00,0.0,Defiance 2x MicroStrategy short
+NET,1x,equity,NET,0.00,0.0,Cloudflare — Cloud momentum (from 0dte_list)
+SMCI,1x,equity,SMCI,0.00,0.0,Super Micro Computer — Explosive momentum (from 0dte_list)
+DHI,1x,equity,DHI,0.00,0.0,D.R. Horton — Homebuilder (from 0dte_list)
+LEN,1x,equity,LEN,0.00,0.0,Lennar — Homebuilder (from 0dte_list)
+NBIS,1x,equity,Nebius,0.00,0.0,Nebius Group — direct underlying
+DAL,1x,equity,DAL,0.00,0.0,Delta Air Lines — Cyclical (from 0dte_list)
+CRWV,1x,equity,CoreWeave,0.00,0.0,CoreWeave Holding Co. — direct underlying
+BLDR,1x,equity,BLDR,0.00,0.0,Builders FirstSource — Homebuilding (from 0dte_list)
+SNDK,1x,equity,SNDK,0.00,0.0,Western Digital (SNDK) — Storage (from 0dte_list)
+WDC,1x,equity,WDC,0.00,0.0,Western Digital — Storage (from 0dte_list)
+HOOD,1x,equity,HOOD,0.00,0.0,Robinhood — Retail options flow (from 0dte_list)
+PHM,1x,equity,PHM,0.00,0.0,PulteGroup — Homebuilder (from 0dte_list)
+OKLO,1x,equity,OKLO,0.00,0.0,Oklo Inc. — direct underlying
+SOFI,1x,equity,SOFI,0.00,0.0,SoFi — Retail momentum (from 0dte_list)
+ASTS,1x,equity,ASTS,0.00,0.0,AST SpaceMobile — Aerospace (from 0dte_list)
+CRDO,1x,equity,CRDO,0.00,0.0,Credo Technology — High-speed connectivity (from 0dte_list)
+RVMD,1x,equity,RVMD,0.00,0.0,Revolution Medicines — Biotech (from 0dte_list)
+RKLB,1x,equity,RKLB,0.00,0.0,Rocket Lab — Aerospace (from 0dte_list)
+IONQ,1x,equity,IONQ,0.00,0.0,IonQ — Quantum computing (from 0dte_list)
+HIMS,1x,equity,Hims & Hers,0.00,0.0,Hims & Hers Health — ORB SO + 0DTE (retail momentum)
+KTOS,1x,equity,KTOS,0.00,0.0,Kratos Defense — Defense (from 0dte_list)
+TOL,1x,equity,TOL,0.00,0.0,Toll Brothers — Homebuilder (from 0dte_list)
+BE,1x,equity,BE,0.00,0.0,Bloom Energy — Clean hydrogen / fuel cells (from 0dte_list)
+CLSK,1x,equity,CLSK,0.00,0.0,CleanSpark — Crypto miner (from 0dte_list)
+APLD,1x,equity,APLD,0.00,0.0,Applied Digital — Data centers (from 0dte_list)
+CIFR,1x,equity,CIFR,0.00,0.0,Cipher Mining — Crypto miner (from 0dte_list)
+OPEN,1x,equity,OPEN,0.00,0.0,Opendoor Technologies — direct underlying for OPEX sleeve
+AEHR,1x,equity,AEHR,0.00,0.0,Aehr Test Systems — Semiconductor test (from 0dte_list)
+RGTI,1x,equity,Rigetti,0.00,0.0,Rigetti Computing — direct underlying
+WULF,1x,equity,WULF,0.00,0.0,TeraWulf — Crypto miner (from 0dte_list)
+FLY,1x,equity,FLY,0.00,0.0,Firefly Aerospace — Aerospace (from 0dte_list)
+QBTS,2x,stock,QBTS,0.00,0.0,Defiance 2x QBTS short
+IREN,2x,stock,IREN,0.00,0.0,Defiance 2x IREN bull
+FIG,2x,stock,FIG,0.00,0.0,Leverage Shares 2x Figma bull

@@ -1,0 +1,1321 @@
+{
+  "bull_bear_pairs": {
+    "TQQQ": {
+      "bear_etf": "SQQQ",
+      "underlying": "Nasdaq-100",
+      "category": "index",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "nasdaq",
+        "qqq",
+        "nasdaq100",
+        "tech",
+        "growth",
+        "innovation",
+        "AI",
+        "semiconductors",
+        "mega cap",
+        "magnificent 7",
+        "tech giants",
+        "apple",
+        "microsoft",
+        "nvidia",
+        "amazon",
+        "meta",
+        "google",
+        "tesla"
+      ],
+      "market_context": "Tracks 100 largest non-financial Nasdaq companies, heavily weighted toward tech giants, sensitive to interest rates and AI trends",
+      "sentiment_triggers": {
+        "positive": [
+          "AI breakthroughs",
+          "tech earnings beats",
+          "Fed dovishness",
+          "semiconductor recovery",
+          "tech innovation"
+        ],
+        "negative": [
+          "tech regulation",
+          "interest rate hikes",
+          "recession fears",
+          "semiconductor downturn",
+          "tech bubble"
+        ]
+      },
+      "news_sources": [
+        "TechCrunch",
+        "CNBC Tech",
+        "Bloomberg Technology",
+        "Reuters Technology"
+      ],
+      "trading_impact": "High volatility during market open/close, earnings seasons"
+    },
+    "SQQQ": {
+      "bull_etf": "TQQQ",
+      "underlying": "Nasdaq-100",
+      "category": "index",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "nasdaq",
+        "qqq",
+        "nasdaq100",
+        "tech",
+        "decline",
+        "crash",
+        "recession",
+        "tech bubble",
+        "AI overvaluation",
+        "tech giants",
+        "apple",
+        "microsoft",
+        "nvidia",
+        "amazon",
+        "meta",
+        "google",
+        "tesla"
+      ],
+      "market_context": "Inverse exposure to Nasdaq-100, benefits from tech sector weakness, volatility decay risk in sideways markets",
+      "sentiment_triggers": {
+        "positive": [
+          "tech regulation",
+          "AI bubble concerns",
+          "recession fears",
+          "semiconductor weakness",
+          "tech overvaluation"
+        ],
+        "negative": [
+          "AI breakthroughs",
+          "tech earnings beats",
+          "Fed dovishness",
+          "semiconductor recovery",
+          "tech innovation"
+        ]
+      },
+      "news_sources": [
+        "TechCrunch",
+        "CNBC Tech",
+        "Bloomberg Technology",
+        "Reuters Technology"
+      ],
+      "trading_impact": "Inverse correlation with TQQQ, high volatility during tech sector weakness"
+    },
+    "TMF": {
+      "bear_etf": "TMV",
+      "underlying": "20+ Year Treasury",
+      "category": "bond",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "bonds",
+        "treasury",
+        "rates",
+        "fed",
+        "yield",
+        "inflation",
+        "long term",
+        "tlt"
+      ]
+    },
+    "TMV": {
+      "bull_etf": "TMF",
+      "underlying": "20+ Year Treasury",
+      "category": "bond",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "bonds",
+        "treasury",
+        "rates",
+        "fed",
+        "yield",
+        "inflation",
+        "long term",
+        "tlt"
+      ]
+    },
+    "GDXU": {
+      "bear_etf": "GDXD",
+      "underlying": "Gold Miners",
+      "category": "commodity",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "gold",
+        "miners",
+        "precious metals",
+        "inflation",
+        "safe haven",
+        "gdx",
+        "mining"
+      ]
+    },
+    "GDXD": {
+      "bull_etf": "GDXU",
+      "underlying": "Gold Miners",
+      "category": "commodity",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "gold",
+        "miners",
+        "precious metals",
+        "inflation",
+        "safe haven",
+        "gdx",
+        "mining"
+      ]
+    },
+    "SPXS": {
+      "bull_etf": "N/A",
+      "underlying": "S&P 500",
+      "category": "index",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "market",
+        "spy",
+        "sp500",
+        "economy",
+        "recession",
+        "inflation",
+        "s&p",
+        "spx"
+      ]
+    },
+    "SOXL": {
+      "bear_etf": "SOXS",
+      "underlying": "Semiconductors",
+      "category": "tech",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "semiconductors",
+        "chips",
+        "nvidia",
+        "amd",
+        "intel",
+        "tsmc",
+        "soxx",
+        "chip stocks"
+      ]
+    },
+    "SOXS": {
+      "bull_etf": "SOXL",
+      "underlying": "Semiconductors",
+      "category": "tech",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "semiconductors",
+        "chips",
+        "nvidia",
+        "amd",
+        "intel",
+        "tsmc",
+        "soxx",
+        "chip stocks"
+      ]
+    },
+    "RUT": {
+      "bear_etf": "N/A",
+      "underlying": "Russell 2000",
+      "category": "index",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "small cap",
+        "russell 2000",
+        "growth stocks",
+        "small companies",
+        "iwm",
+        "russell"
+      ]
+    },
+    "TNA": {
+      "bear_etf": "N/A",
+      "underlying": "Small Cap Stocks",
+      "category": "index",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "small cap",
+        "small cap stocks",
+        "small companies",
+        "growth stocks",
+        "russell 2000",
+        "iwm"
+      ]
+    },
+    "TYD": {
+      "bear_etf": "TYO",
+      "underlying": "7-10 Year Treasury",
+      "category": "bond",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "bonds",
+        "treasury",
+        "rates",
+        "fed",
+        "yield",
+        "intermediate",
+        "ief",
+        "treasury bonds"
+      ]
+    },
+    "TYO": {
+      "bull_etf": "TYD",
+      "underlying": "7-10 Year Treasury",
+      "category": "bond",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "bonds",
+        "treasury",
+        "rates",
+        "fed",
+        "yield",
+        "intermediate",
+        "ief",
+        "treasury bonds"
+      ]
+    },
+    "DRN": {
+      "bear_etf": "DRV",
+      "underlying": "Real Estate",
+      "category": "sector",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "reit",
+        "real estate",
+        "property",
+        "xlre",
+        "real estate stocks",
+        "reits"
+      ]
+    },
+    "DRV": {
+      "bull_etf": "DRN",
+      "underlying": "Real Estate",
+      "category": "sector",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "reit",
+        "real estate",
+        "property",
+        "xlre",
+        "real estate stocks",
+        "reits"
+      ]
+    },
+    "DFEN": {
+      "bear_etf": "N/A",
+      "underlying": "Aerospace & Defense",
+      "category": "sector",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "defense",
+        "aerospace",
+        "military",
+        "defense stocks",
+        "aerospace stocks",
+        "lockheed",
+        "boeing",
+        "raytheon"
+      ]
+    },
+    "ERX": {
+      "bear_etf": "ERY",
+      "underlying": "Energy",
+      "category": "sector",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "energy",
+        "oil",
+        "gas",
+        "xle",
+        "energy sector",
+        "oil stocks",
+        "energy stocks"
+      ]
+    },
+    "ERY": {
+      "bull_etf": "ERX",
+      "underlying": "Energy",
+      "category": "sector",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "energy",
+        "oil",
+        "gas",
+        "xle",
+        "energy sector",
+        "oil stocks",
+        "energy stocks"
+      ]
+    },
+    "UGL": {
+      "bear_etf": "GLL",
+      "underlying": "Gold",
+      "category": "commodity",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "gold",
+        "precious metals",
+        "gld",
+        "gold price",
+        "safe haven",
+        "inflation hedge"
+      ]
+    },
+    "GLL": {
+      "bull_etf": "UGL",
+      "underlying": "Gold",
+      "category": "commodity",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "gold",
+        "precious metals",
+        "gld",
+        "gold price",
+        "safe haven",
+        "inflation hedge"
+      ]
+    },
+    "JNUG": {
+      "bear_etf": "JDST",
+      "underlying": "Junior Gold Miners",
+      "category": "commodity",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "gold",
+        "junior miners",
+        "small cap miners",
+        "gdxj",
+        "junior gold",
+        "mining"
+      ]
+    },
+    "JDST": {
+      "bull_etf": "JNUG",
+      "underlying": "Junior Gold Miners",
+      "category": "commodity",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "gold",
+        "junior miners",
+        "small cap miners",
+        "gdxj",
+        "junior gold",
+        "mining"
+      ]
+    },
+    "QQQU": {
+      "bear_etf": "QQQD",
+      "underlying": "Magnificent 7",
+      "category": "index",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "magnificent 7",
+        "m7",
+        "top 7 stocks",
+        "largest stocks",
+        "market leaders",
+        "mega caps"
+      ]
+    },
+    "QQQD": {
+      "bull_etf": "QQQU",
+      "underlying": "Magnificent 7",
+      "category": "index",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "magnificent 7",
+        "m7",
+        "top 7 stocks",
+        "largest stocks",
+        "market leaders",
+        "mega caps"
+      ]
+    },
+    "SAA": {
+      "bear_etf": "N/A",
+      "underlying": "S&P Small Cap 600",
+      "category": "index",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "small cap",
+        "small companies",
+        "growth",
+        "sp600",
+        "s&p 600",
+        "small cap stocks"
+      ]
+    },
+    "DDM": {
+      "bear_etf": "DXD",
+      "underlying": "Dow Jones",
+      "category": "index",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "dow jones",
+        "blue chip",
+        "industrial",
+        "dow",
+        "dji",
+        "industrial average"
+      ]
+    },
+    "DXD": {
+      "bull_etf": "DDM",
+      "underlying": "Dow Jones",
+      "category": "index",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "dow jones",
+        "blue chip",
+        "industrial",
+        "dow",
+        "dji",
+        "industrial average"
+      ]
+    },
+    "UWM": {
+      "bear_etf": "TWM",
+      "underlying": "Russell 2000",
+      "category": "index",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "small cap",
+        "russell 2000",
+        "iwm",
+        "small companies",
+        "growth stocks"
+      ]
+    },
+    "TWM": {
+      "bull_etf": "UWM",
+      "underlying": "Russell 2000",
+      "category": "index",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "small cap",
+        "russell 2000",
+        "iwm",
+        "small companies",
+        "growth stocks"
+      ]
+    },
+    "URE": {
+      "bear_etf": "SRS",
+      "underlying": "Real Estate",
+      "category": "sector",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "reit",
+        "real estate",
+        "property",
+        "xlre",
+        "real estate stocks",
+        "reits"
+      ]
+    },
+    "SRS": {
+      "bull_etf": "URE",
+      "underlying": "Real Estate",
+      "category": "sector",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "reit",
+        "real estate",
+        "property",
+        "xlre",
+        "real estate stocks",
+        "reits"
+      ]
+    },
+    "MVV": {
+      "bear_etf": "N/A",
+      "underlying": "Mid Cap",
+      "category": "index",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "mid cap",
+        "mid cap stocks",
+        "mid sized companies",
+        "growth",
+        "value"
+      ]
+    },
+    "UBT": {
+      "bear_etf": "TBT",
+      "underlying": "20+ Year Treasury",
+      "category": "bond",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "bonds",
+        "treasury",
+        "rates",
+        "fed",
+        "yield",
+        "tlt",
+        "long term bonds"
+      ]
+    },
+    "TBT": {
+      "bull_etf": "UBT",
+      "underlying": "20+ Year Treasury",
+      "category": "bond",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "bonds",
+        "treasury",
+        "rates",
+        "fed",
+        "yield",
+        "tlt",
+        "long term bonds"
+      ]
+    },
+    "DIG": {
+      "bear_etf": "DUG",
+      "underlying": "Energy",
+      "category": "sector",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "energy",
+        "oil",
+        "gas",
+        "xle",
+        "energy sector",
+        "oil stocks"
+      ]
+    },
+    "DUG": {
+      "bull_etf": "DIG",
+      "underlying": "Energy",
+      "category": "sector",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "energy",
+        "oil",
+        "gas",
+        "xle",
+        "energy sector",
+        "oil stocks"
+      ]
+    },
+    "UMDD": {
+      "bear_etf": "SMDD",
+      "underlying": "Mid Cap",
+      "category": "index",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "mid cap",
+        "mid cap stocks",
+        "mid sized companies",
+        "growth",
+        "value"
+      ]
+    },
+    "SMDD": {
+      "bull_etf": "UMDD",
+      "underlying": "Mid Cap",
+      "category": "index",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "mid cap",
+        "mid cap stocks",
+        "mid sized companies",
+        "growth",
+        "value"
+      ]
+    },
+    "SKYU": {
+      "bear_etf": "N/A",
+      "underlying": "Nasdaq Cloud Computing",
+      "category": "sector",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "cloud computing",
+        "cloud",
+        "saas",
+        "software",
+        "aws",
+        "azure",
+        "gcp",
+        "cloud stocks"
+      ]
+    },
+    "UCYB": {
+      "bear_etf": "N/A",
+      "underlying": "Nasdaq Cybersecurity",
+      "category": "sector",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "cybersecurity",
+        "cyber",
+        "security",
+        "hack",
+        "data breach",
+        "cyber stocks"
+      ],
+      "market_context": "2x leveraged exposure to cybersecurity sector, benefits from increasing cyber threats and security spending",
+      "sentiment_triggers": {
+        "positive": [
+          "cyber attacks",
+          "data breaches",
+          "security regulations",
+          "enterprise security spending",
+          "cloud security adoption"
+        ],
+        "negative": [
+          "cyber security budget cuts",
+          "regulatory relief",
+          "security technology commoditization",
+          "reduced threat landscape"
+        ]
+      },
+      "news_sources": [
+        "Cybersecurity news",
+        "TechCrunch Security",
+        "Dark Reading",
+        "Security Week"
+      ],
+      "trading_impact": "High volatility during major cyber attacks, earnings seasons, regulatory announcements"
+    },
+    "TSLL": {
+      "bear_etf": "N/A",
+      "underlying": "Tesla",
+      "category": "stock",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "tesla",
+        "tsla",
+        "elon musk",
+        "electric vehicles",
+        "ev",
+        "autopilot",
+        "tesla stock",
+        "model 3",
+        "model y",
+        "cybertruck",
+        "fsd",
+        "battery",
+        "gigafactory",
+        "supercharger",
+        "energy storage"
+      ],
+      "market_context": "2x leveraged exposure to Tesla stock, highly volatile and news-driven, sensitive to Elon Musk's statements and EV market trends",
+      "sentiment_triggers": {
+        "positive": [
+          "strong delivery numbers",
+          "FSD progress",
+          "new model launches",
+          "EV adoption growth",
+          "battery breakthroughs",
+          "gigafactory expansion"
+        ],
+        "negative": [
+          "delivery misses",
+          "FSD delays",
+          "competition concerns",
+          "regulatory issues",
+          "production problems",
+          "safety recalls"
+        ]
+      },
+      "news_sources": [
+        "Tesla-specific news",
+        "EV industry news",
+        "Elon Musk's social media",
+        "Tesla Investor Relations"
+      ],
+      "trading_impact": "High volatility during earnings, product announcements, Elon Musk tweets"
+    },
+    "AAPL": {
+      "bear_etf": "AAPD",
+      "underlying": "Apple",
+      "category": "stock",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "apple",
+        "aapl",
+        "iphone",
+        "tim cook",
+        "ios",
+        "mac",
+        "services",
+        "apple stock"
+      ]
+    },
+    "AAPD": {
+      "bull_etf": "AAPL",
+      "underlying": "Apple",
+      "category": "stock",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "apple",
+        "aapl",
+        "iphone",
+        "tim cook",
+        "ios",
+        "mac",
+        "services",
+        "apple stock"
+      ]
+    },
+    "SHPU": {
+      "bear_etf": "SHPD",
+      "underlying": "Shopify",
+      "category": "stock",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "shopify",
+        "shop",
+        "e-commerce",
+        "online retail",
+        "shopify stock",
+        "ecommerce"
+      ]
+    },
+    "SHPD": {
+      "bull_etf": "SHPU",
+      "underlying": "Shopify",
+      "category": "stock",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "shopify",
+        "shop",
+        "e-commerce",
+        "online retail",
+        "shopify stock",
+        "ecommerce"
+      ]
+    },
+    "QCMU": {
+      "bear_etf": "QCMD",
+      "underlying": "Qualcomm",
+      "category": "stock",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "qualcomm",
+        "qcom",
+        "semiconductors",
+        "5g",
+        "mobile",
+        "chips",
+        "qualcomm stock"
+      ]
+    },
+    "QCMD": {
+      "bull_etf": "QCMU",
+      "underlying": "Qualcomm",
+      "category": "stock",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "qualcomm",
+        "qcom",
+        "semiconductors",
+        "5g",
+        "mobile",
+        "chips",
+        "qualcomm stock"
+      ]
+    },
+    "PLTU": {
+      "bear_etf": "N/A",
+      "underlying": "Palantir",
+      "category": "stock",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "palantir",
+        "pltr",
+        "data analytics",
+        "ai",
+        "government",
+        "palantir stock"
+      ]
+    },
+    "PALU": {
+      "bear_etf": "PALD",
+      "underlying": "Palo Alto Networks",
+      "category": "stock",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "palo alto",
+        "panw",
+        "cybersecurity",
+        "network security",
+        "firewall",
+        "palo alto stock"
+      ]
+    },
+    "PALD": {
+      "bull_etf": "PALU",
+      "underlying": "Palo Alto Networks",
+      "category": "stock",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "palo alto",
+        "panw",
+        "cybersecurity",
+        "network security",
+        "firewall",
+        "palo alto stock"
+      ]
+    },
+    "LMTL": {
+      "bear_etf": "LMTS",
+      "underlying": "Lockheed Martin",
+      "category": "stock",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "lockheed martin",
+        "lmt",
+        "defense",
+        "aerospace",
+        "military",
+        "lockheed stock"
+      ]
+    },
+    "LMTS": {
+      "bull_etf": "LMTL",
+      "underlying": "Lockheed Martin",
+      "category": "stock",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "lockheed martin",
+        "lmt",
+        "defense",
+        "aerospace",
+        "military",
+        "lockheed stock"
+      ]
+    },
+    "ELIL": {
+      "bear_etf": "ELIS",
+      "underlying": "Eli Lilly",
+      "category": "stock",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "eli lilly",
+        "lly",
+        "pharmaceuticals",
+        "drugs",
+        "healthcare",
+        "eli lilly stock"
+      ]
+    },
+    "ELIS": {
+      "bull_etf": "ELIL",
+      "underlying": "Eli Lilly",
+      "category": "stock",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "eli lilly",
+        "lly",
+        "pharmaceuticals",
+        "drugs",
+        "healthcare",
+        "eli lilly stock"
+      ]
+    },
+    "GGLL": {
+      "bear_etf": "GGLS",
+      "underlying": "Google",
+      "category": "stock",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "google",
+        "alphabet",
+        "googl",
+        "search",
+        "youtube",
+        "android",
+        "cloud",
+        "ai",
+        "google stock"
+      ]
+    },
+    "GGLS": {
+      "bull_etf": "GGLL",
+      "underlying": "Google",
+      "category": "stock",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "google",
+        "alphabet",
+        "googl",
+        "search",
+        "youtube",
+        "android",
+        "cloud",
+        "ai",
+        "google stock"
+      ]
+    },
+    "AVL": {
+      "bear_etf": "AVS",
+      "underlying": "Broadcom",
+      "category": "stock",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "broadcom",
+        "avgo",
+        "semiconductors",
+        "chips",
+        "networking",
+        "infrastructure",
+        "broadcom stock"
+      ]
+    },
+    "AVS": {
+      "bull_etf": "AVL",
+      "underlying": "Broadcom",
+      "category": "stock",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "broadcom",
+        "avgo",
+        "semiconductors",
+        "chips",
+        "networking",
+        "infrastructure",
+        "broadcom stock"
+      ]
+    },
+    "UCO": {
+      "bear_etf": "SCO",
+      "underlying": "Oil",
+      "category": "commodity",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "oil",
+        "crude",
+        "energy",
+        "opec",
+        "gasoline",
+        "petroleum",
+        "drilling",
+        "oil etf"
+      ]
+    },
+    "SCO": {
+      "bull_etf": "UCO",
+      "underlying": "Oil",
+      "category": "commodity",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "oil",
+        "crude",
+        "energy",
+        "opec",
+        "gasoline",
+        "petroleum",
+        "drilling",
+        "oil etf"
+      ]
+    },
+    "BOIL": {
+      "bear_etf": "KOLD",
+      "underlying": "Natural Gas",
+      "category": "commodity",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "natural gas",
+        "ng",
+        "energy",
+        "heating",
+        "utilities",
+        "fracking",
+        "natural gas etf"
+      ]
+    },
+    "KOLD": {
+      "bull_etf": "BOIL",
+      "underlying": "Natural Gas",
+      "category": "commodity",
+      "leverage": "2x",
+      "sentiment_keywords": [
+        "natural gas",
+        "ng",
+        "energy",
+        "heating",
+        "utilities",
+        "fracking",
+        "natural gas etf"
+      ]
+    },
+    "BTGD": {
+      "bear_etf": "N/A",
+      "underlying": "Bitcoin + Gold",
+      "category": "hybrid",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "bitcoin",
+        "gold",
+        "btc",
+        "precious metals",
+        "crypto",
+        "safe haven",
+        "btgd"
+      ]
+    },
+    "BITX": {
+      "bear_etf": "N/A",
+      "underlying": "Bitcoin",
+      "category": "crypto",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "bitcoin",
+        "btc",
+        "crypto",
+        "cryptocurrency",
+        "blockchain",
+        "bitcoin etf",
+        "bitx"
+      ]
+    },
+    "UXRP": {
+      "bear_etf": "N/A",
+      "underlying": "XRP",
+      "category": "crypto",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "xrp",
+        "ripple",
+        "crypto",
+        "cryptocurrency",
+        "blockchain",
+        "xrp etf",
+        "ripple stock"
+      ]
+    },
+    "SPY": {
+      "bear_etf": "N/A",
+      "underlying": "S&P 500",
+      "category": "index",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "spy",
+        "sp500",
+        "s&p",
+        "market",
+        "index",
+        "spx",
+        "large cap"
+      ]
+    },
+    "QQQ": {
+      "bear_etf": "N/A",
+      "underlying": "Nasdaq-100",
+      "category": "index",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "qqq",
+        "nasdaq",
+        "nasdaq100",
+        "tech",
+        "growth",
+        "innovation"
+      ]
+    },
+    "IWM": {
+      "bear_etf": "N/A",
+      "underlying": "Russell 2000",
+      "category": "index",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "iwm",
+        "russell 2000",
+        "small cap",
+        "small companies",
+        "growth"
+      ]
+    },
+    "DIA": {
+      "bear_etf": "N/A",
+      "underlying": "Dow Jones",
+      "category": "index",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "dia",
+        "dow jones",
+        "dow",
+        "blue chip",
+        "industrial average",
+        "dji"
+      ]
+    },
+    "XLE": {
+      "bear_etf": "N/A",
+      "underlying": "Energy Sector",
+      "category": "sector",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "energy",
+        "oil",
+        "gas",
+        "xle",
+        "energy sector",
+        "exxon",
+        "chevron"
+      ]
+    },
+    "XLF": {
+      "bear_etf": "N/A",
+      "underlying": "Financial Sector",
+      "category": "sector",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "financials",
+        "banks",
+        "xlf",
+        "financial sector",
+        "jpmorgan",
+        "bank of america"
+      ]
+    },
+    "XLI": {
+      "bear_etf": "N/A",
+      "underlying": "Industrial Sector",
+      "category": "sector",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "industrials",
+        "manufacturing",
+        "xli",
+        "industrial sector",
+        "caterpillar",
+        "boeing"
+      ]
+    },
+    "XLK": {
+      "bear_etf": "N/A",
+      "underlying": "Technology Sector",
+      "category": "sector",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "tech",
+        "technology",
+        "xlk",
+        "tech sector",
+        "apple",
+        "microsoft",
+        "software"
+      ]
+    },
+    "XLP": {
+      "bear_etf": "N/A",
+      "underlying": "Consumer Staples Sector",
+      "category": "sector",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "consumer staples",
+        "xlp",
+        "staples",
+        "procter gamble",
+        "coca cola",
+        "walmart"
+      ]
+    },
+    "XLRE": {
+      "bear_etf": "N/A",
+      "underlying": "Real Estate Sector",
+      "category": "sector",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "real estate",
+        "xlre",
+        "reit",
+        "property",
+        "real estate sector"
+      ]
+    },
+    "XLU": {
+      "bear_etf": "N/A",
+      "underlying": "Utilities Sector",
+      "category": "sector",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "utilities",
+        "xlu",
+        "utilities sector",
+        "power",
+        "electric",
+        "water"
+      ]
+    },
+    "XLV": {
+      "bear_etf": "N/A",
+      "underlying": "Healthcare Sector",
+      "category": "sector",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "healthcare",
+        "xlv",
+        "health sector",
+        "pharma",
+        "biotech",
+        "hospitals"
+      ]
+    },
+    "XLY": {
+      "bear_etf": "N/A",
+      "underlying": "Consumer Discretionary Sector",
+      "category": "sector",
+      "leverage": "1x",
+      "sentiment_keywords": [
+        "consumer discretionary",
+        "xly",
+        "discretionary",
+        "amazon",
+        "tesla",
+        "retail"
+      ]
+    },
+    "WDRW": {
+      "bear_etf": "N/A",
+      "underlying": "Regional Banks",
+      "category": "sector",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "regional banks",
+        "banking",
+        "financial",
+        "kre",
+        "regional banking",
+        "community banks"
+      ]
+    },
+    "WDRW": {
+      "bear_etf": "N/A",
+      "underlying": "Regional Banks",
+      "category": "sector",
+      "leverage": "3x",
+      "sentiment_keywords": [
+        "regional banks",
+        "banking",
+        "financial",
+        "kre",
+        "regional banking",
+        "community banks"
+      ]
+    }
+  },
+  "sentiment_categories": {
+    "very_positive": 0.8,
+    "positive": 0.5,
+    "neutral": 0.0,
+    "negative": -0.5,
+    "very_negative": -0.8
+  },
+  "news_source_weights": {
+    "polygon": 1.0,
+    "finnhub": 0.8,
+    "finviz": 0.6,
+    "yahoo": 0.4,
+    "default": 0.2
+  },
+  "confidence_boost_factors": {
+    "3x_leverage": 0.4,
+    "2x_leverage": 0.3,
+    "1x_leverage": 0.2
+  },
+  "daily_sentiment_tracking": {
+    "enabled": true,
+    "update_frequency": "hourly",
+    "retention_days": 30,
+    "confidence_threshold": 0.6
+  }
+}
